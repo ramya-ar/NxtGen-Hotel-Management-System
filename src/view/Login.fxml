@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <TextField fx:id="txtusername" layoutX="197.0" layoutY="127.0" promptText="Username" />
+      <Button fx:id="btnlogin" layoutX="262.0" layoutY="281.0" mnemonicParsing="false" onAction="#login" text="Login">
+         <effect>
+            <DropShadow height="99.51" radius="45.9525" spread="0.35" width="86.3" />
+         </effect></Button>
+      <Label alignment="CENTER" layoutX="174.0" layoutY="50.0" text="Hotel Grand Hyatt">
+         <font>
+            <Font name="Lucida Bright Italic" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblpopup" layoutX="195.0" layoutY="227.0" prefHeight="27.0" prefWidth="340.0" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <PasswordField fx:id="txtpassword" layoutX="197.0" layoutY="185.0" promptText="Password" />
+   </children>
+</AnchorPane>

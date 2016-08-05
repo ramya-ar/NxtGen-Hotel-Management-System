@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="767.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BillController">
+   <children>
+      <Label layoutX="336.0" layoutY="30.0" text="Bill ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="143.0" text="ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="183.0" text="Customer name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="183.0" layoutY="230.0" text="Phone Number">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="559.0" layoutY="290.0" text="Discount Coupon">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtbillid" layoutX="344.0" layoutY="142.0" />
+      <TextField fx:id="txtbilcustname" layoutX="344.0" layoutY="183.0" />
+      <TextField fx:id="txtbillphno" layoutX="344.0" layoutY="230.0" />
+      <ComboBox fx:id="cmbxbillcoupon" layoutX="559.0" layoutY="324.0" prefHeight="31.0" prefWidth="104.0" />
+      <ButtonBar layoutX="283.0" layoutY="492.0" prefHeight="40.0" prefWidth="200.0" />
+      <Label layoutX="274.0" layoutY="275.0" text="Date">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="bkbutton" layoutX="55.0" layoutY="229.0" mnemonicParsing="false" onAction="#back" text="&lt;--Back" />
+      <Button fx:id="btnbilladd" layoutX="386.0" layoutY="429.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="104.0" text="Generate Bill">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnbillok" layoutX="455.0" layoutY="83.0" mnemonicParsing="false" onAction="#ok" text="OK" />
+      <ComboBox fx:id="cmbxselcustbill" layoutX="214.0" layoutY="83.0" prefHeight="31.0" prefWidth="235.0" promptText="Select Customer for Billing" />
+      <TextField fx:id="billdate" layoutX="344.0" layoutY="274.0" prefHeight="31.0" prefWidth="187.0" promptText="mm/dd/yyyy" />
+      <Label layoutX="247.0" layoutY="325.0" text="Amount">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="billamount" layoutX="342.0" layoutY="324.0" />
+      <TextField fx:id="totalbill" layoutX="344.0" layoutY="370.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="271.0" layoutY="371.0" prefHeight="30.0" prefWidth="48.0" text="Total">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="couponok" layoutX="681.0" layoutY="324.0" mnemonicParsing="false" onAction="#billok" prefHeight="31.0" prefWidth="57.0" text="OK" />
+   </children>
+</AnchorPane>

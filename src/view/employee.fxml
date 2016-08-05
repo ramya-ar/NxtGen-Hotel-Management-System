@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeController">
+   <children>
+      <Label layoutX="147.0" layoutY="28.0" text="Welcome Employee">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="89.0" text="Select Category">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="empCustomer" layoutX="250.0" layoutY="169.0" mnemonicParsing="false" onAction="#customer" prefHeight="50.0" prefWidth="100.0" text="Customer">
+         <effect>
+            <DropShadow height="36.55" radius="20.884999999999998" spread="0.24" width="48.99" />
+         </effect>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="empBill" layoutX="250.0" layoutY="241.0" mnemonicParsing="false" onAction="#bill" prefHeight="50.0" prefWidth="100.0" text="Bill">
+         <effect>
+            <DropShadow height="42.77" radius="22.44" spread="0.33" width="48.99" />
+         </effect>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="emplogout" layoutX="250.0" layoutY="324.0" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="100.0" text="Logout">
+         <effect>
+            <DropShadow spread="0.39" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

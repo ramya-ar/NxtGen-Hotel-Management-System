@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="pane" prefHeight="500.0" prefWidth="500.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <children>
+      <AnchorPane layoutX="-197.0" layoutY="-172.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label alignment="CENTER" layoutX="160.0" layoutY="46.0" text="Welcome Admin" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="admDeluxe" layoutX="121.0" layoutY="145.0" mnemonicParsing="false" onAction="#deluxe" prefHeight="50.0" prefWidth="100.0" text="Deluxe">
+         <effect>
+            <DropShadow height="83.2" radius="32.5475" spread="0.27" width="48.99" />
+         </effect>
+      </Button>
+      <Button fx:id="admExecutive" layoutX="252.0" layoutY="145.0" mnemonicParsing="false" onAction="#executive" prefHeight="50.0" prefWidth="100.0" text="Executive">
+         <effect>
+            <DropShadow height="83.2" radius="32.5475" spread="0.27" width="48.99" />
+         </effect>
+      </Button>
+      <Button fx:id="admcust" layoutX="121.0" layoutY="219.0" mnemonicParsing="false" onAction="#customer" prefHeight="50.0" prefWidth="100.0" text="Customer">
+         <effect>
+            <DropShadow height="83.2" radius="32.5475" spread="0.27" width="48.99" />
+         </effect>
+      </Button>
+      <Button fx:id="admEmployees" layoutX="252.0" layoutY="219.0" mnemonicParsing="false" onAction="#employeepage" prefHeight="50.0" prefWidth="100.0" text="Employees">
+         <effect>
+            <DropShadow height="83.2" radius="32.5475" spread="0.27" width="48.99" />
+         </effect>
+      </Button>
+      <Label layoutX="187.0" layoutY="94.0" text="Select a category">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="admlogout" layoutX="193.0" layoutY="297.0" mnemonicParsing="false" onAction="#logout" prefHeight="40.0" prefWidth="100.0" text="Logout">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" spread="0.28" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

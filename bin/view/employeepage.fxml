@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="630.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeepageController">
+   <children>
+      <Label layoutX="238.0" layoutY="23.0" text="Employees">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="121.0" text="ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="161.0" text="Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtempagename" layoutX="238.0" layoutY="161.0" prefHeight="31.0" prefWidth="143.0" />
+      <TextField fx:id="txtempagelstnm" layoutX="386.0" layoutY="161.0" />
+      <TextField fx:id="txtempageid" layoutX="238.0" layoutY="121.0" />
+      <TextArea fx:id="txtempageaddress" layoutX="238.0" layoutY="246.0" prefHeight="90.0" prefWidth="211.0" />
+      <Label layoutX="156.0" layoutY="251.0" text="Address">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="203.0" text="Phone Number">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtempageph" layoutX="238.0" layoutY="203.0" />
+      <ButtonBar layoutX="118.0" layoutY="346.0" prefHeight="40.0" prefWidth="307.0">
+        <buttons>
+          <Button fx:id="btnempageadd" mnemonicParsing="false" onAction="#add" prefHeight="31.0" text="Add Employee">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnempagedel" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="166.0" text="Delete Employee">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="185.0" layoutY="386.0" prefHeight="40.0" prefWidth="143.0">
+         <buttons>
+            <Button fx:id="btnempview" mnemonicParsing="false" onAction="#view" prefHeight="31.0" prefWidth="149.0" text="View Employee" />
+         </buttons>
+      </ButtonBar>
+      <Button fx:id="bkbutton" layoutX="30.0" layoutY="171.0" mnemonicParsing="false" onAction="#back" text="&lt;-- Back" />
+      <Label layoutX="449.0" layoutY="346.0" prefHeight="31.0" prefWidth="156.0" text="Enter employee ID" />
+   </children>
+</AnchorPane>

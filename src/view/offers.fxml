@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="618.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OffersController">
+   <children>
+      <Label layoutX="270.0" layoutY="29.0" text="Offers">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="101.0" text="Offer Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="184.0" layoutY="154.0" text="Code">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="204.0" text="Discount">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtoffrname" layoutX="265.0" layoutY="101.0" />
+      <TextField fx:id="txtoffrcode" layoutX="265.0" layoutY="153.0" />
+      <TextField fx:id="txtoffrdiscount" layoutX="265.0" layoutY="203.0" />
+      <ButtonBar layoutX="117.0" layoutY="265.0" prefHeight="40.0" prefWidth="367.0">
+        <buttons>
+          <Button fx:id="btnoffradd" mnemonicParsing="false" text="Add Offer">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnoffrupd" mnemonicParsing="false" text="Update Offer">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnoffrdel" mnemonicParsing="false" text="Delete Offer">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="151.0" layoutY="327.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <Button fx:id="btnoffrprev" mnemonicParsing="false" text="&lt;Prev">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnoffrnxt" mnemonicParsing="false" text="Next&gt;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <Button fx:id="btnoffrok" layoutX="368.0" layoutY="332.0" mnemonicParsing="false" text="Ok">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="bkbutton" layoutX="45.0" layoutY="169.0" mnemonicParsing="false" onAction="#back" text="&lt;--Back" />
+   </children>
+</AnchorPane>
